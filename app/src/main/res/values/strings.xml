@@ -2,4 +2,7 @@
     <string name="app_name">AndroidAlertDialogUiTestAutomation</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="radio_buttons_description">Radio buttons are used for optional sets that are mutually exclusive.</string>
+    <string name="radio_buttons">Radio buttons</string>
+    <string name="radio_button">radio button</string>
 </resources>
