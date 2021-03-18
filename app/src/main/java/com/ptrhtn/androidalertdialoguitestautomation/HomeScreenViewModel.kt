@@ -9,4 +9,8 @@ class HomeScreenViewModel(application: Application) : AndroidViewModel(applicati
 
     val radioWave by lazy { MutableLiveData<String>() }
 
+    fun getRadioWave() {
+        radioWave.value = sharedPreferencesService.getRadioWave()
+    }
+
 }
