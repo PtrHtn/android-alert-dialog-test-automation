@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 
 class HomeScreenFragment : Fragment() {
+    private lateinit var homeScreenViewModel: HomeScreenViewModel
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
