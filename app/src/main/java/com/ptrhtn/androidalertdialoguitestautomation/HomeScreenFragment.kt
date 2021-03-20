@@ -14,4 +14,8 @@ class HomeScreenFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_home_screen, container, false)
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+    }
+
 }
