@@ -31,6 +31,12 @@ class HomeScreenFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        homeScreenViewModel = ViewModelProvider(this).get(HomeScreenViewModel::class.java)
+        homeScreenViewModel.radioWave.observe(
+                viewLifecycleOwner,
+                radioWaveValueObserver
+        )
     }
 
 }
