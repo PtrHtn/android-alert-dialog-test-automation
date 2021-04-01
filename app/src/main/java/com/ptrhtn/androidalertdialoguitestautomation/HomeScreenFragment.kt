@@ -20,7 +20,7 @@ class HomeScreenFragment : Fragment() {
 
     private val radioWaveValueObserver = Observer<String>{radioWaveValue ->
         radioWaveValue?.let {
-            view?.findViewById<TextView>(R.id.home_screen_radio_buttons_value_textView)
+            view?.findViewById<TextView>(R.id.home_screen_radio_buttons_value_textView)?.text = radioWaveValue
         }
     }
 
