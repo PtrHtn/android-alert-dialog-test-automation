@@ -37,6 +37,7 @@ class HomeScreenFragment : Fragment() {
                 viewLifecycleOwner,
                 radioWaveValueObserver
         )
+        homeScreenViewModel.getRadioWave()
     }
 
 }
