@@ -7,10 +7,15 @@ import androidx.lifecycle.MutableLiveData
 class HomeScreenViewModel(application: Application) : AndroidViewModel(application) {
     private val sharedPreferencesService = SharedPreferencesService(application)
 
-    val radioWave by lazy { MutableLiveData<String>() }
+    val radioButtonChoice by lazy { MutableLiveData<String>() }
 
-    fun getRadioWave() {
-        radioWave.value = sharedPreferencesService.getRadioWave()
+    fun getRadioButtonChoice() {
+        radioButtonChoice.value = sharedPreferencesService.getRadioButtonChoice()
+    }
+
+    fun setRadioButtonChoice(radioButtonValue: String) {
+        sharedPreferencesService.save("radioButtonChoice", radioButtonValue)
+        radioButtonChoice.value = radioButtonValue
     }
 
 }
