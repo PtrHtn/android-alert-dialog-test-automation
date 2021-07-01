@@ -24,4 +24,19 @@ class HomeScreenUiTests : TestCase() {
             }
         }
     }
+
+    @Test
+    fun shouldDisplayAllHomeScreenViews_asExpected_inLandscapeMode() {
+        before {
+            device.uiDevice.setOrientationLeft()
+            activityTestRule.launchActivity(null)
+        }.after {
+            device.uiDevice.setOrientationNatural()
+        }.run {
+            step("Open Home screen and check title") {
+                HomeScreen { homeScreenTitle.isDisplayed() }
+            }
+        }
+    }
+
 }
