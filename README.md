@@ -1,2 +1,2 @@
-# android-alert-dialog-ui-test-automation
-UI test automation of android alert dialog
+# android-alert-dialogs-kaspresso-test-automation
+Kaspresso test automation of android alert dialog
